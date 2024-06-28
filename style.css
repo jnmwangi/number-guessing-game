@@ -1,0 +1,72 @@
+:root {
+    --primary-color: rgb(50, 101, 169);
+    --secondary-color: rgb(245, 170, 109);
+    --shadow: 0 0 5px #c1c0c0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+header {
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    width: 400px;
+    box-sizing: content-box;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 0.875em;
+    color: var(--secondary-color)
+}
+
+main {
+    box-sizing: content-box;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+span {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    min-width: 50px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 1em;
+    border: 2px solid rgba(255, 255, 255, .0);
+    box-sizing: content-box;
+}
+
+button:hover{
+    border: 2px solid var(--primary-color);
+}
+
+input{
+    font-size: 1em;
+    box-sizing: content-box;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesing Game</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="utils.js" defer></script>
+    <script src="ui.js" defer></script>
+    
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Number Guessing Game</h1>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <p>Am thinking of a number between <span class="range"></span> and <span class="range"></span></p>
+            <p>What is it?</p>
+            <form>
+                <input name="answer" type="number" placeholder="Type answer here" />
+                <button type="button">Submit</button>
+            </form>
+        </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector("button").addEventListener("click", ()=>{
+            const answer = Number(document.querySelector("input[name='answer']").value);
+            guess(answer);
+        });
+    </script>
+</body>
+
+</html>
